@@ -1,0 +1,25 @@
+country,opponent,match,kickoff_edt,end_edt,game_winner_start,game_winner_end,championship_loss_start,championship_loss_end
+Los Angeles Rams,Carolina Panthers,los-angeles-rams-carolina-panthers,2026-01-10 04:30 PM EST,2026-01-10 09:45 PM EST,0.815000,1.000000,0.830000,0.815500
+Carolina Panthers,Los Angeles Rams,los-angeles-rams-carolina-panthers,2026-01-10 04:30 PM EST,2026-01-10 09:45 PM EST,0.185000,0.000000,0.992500,0.999500
+Green Bay Packers,Chicago Bears,green-bay-packers-chicago-bears,2026-01-10 08:00 PM EST,2026-01-11 01:15 AM EST,0.545000,0.000000,0.968000,0.999500
+Chicago Bears,Green Bay Packers,green-bay-packers-chicago-bears,2026-01-10 08:00 PM EST,2026-01-11 01:15 AM EST,0.455000,1.000000,0.964000,0.939500
+Buffalo Bills,Jacksonville Jaguars,buffalo-bills-jacksonville-jaguars,2026-01-11 01:00 PM EST,2026-01-11 06:15 PM EST,0.455000,1.000000,0.925000,0.865000
+Jacksonville Jaguars,Buffalo Bills,buffalo-bills-jacksonville-jaguars,2026-01-11 01:00 PM EST,2026-01-11 06:15 PM EST,0.545000,0.000000,0.927500,0.999500
+San Francisco 49ers,Philadelphia Eagles,san-francisco-49ers-philadelphia-eagles,2026-01-11 04:30 PM EST,2026-01-11 09:45 PM EST,0.315000,1.000000,0.967500,0.941000
+Philadelphia Eagles,San Francisco 49ers,san-francisco-49ers-philadelphia-eagles,2026-01-11 04:30 PM EST,2026-01-11 09:45 PM EST,0.685000,0.000000,0.895000,0.999500
+Los Angeles Chargers,New England Patriots,los-angeles-chargers-new-england-patriots,2026-01-11 08:00 PM EST,2026-01-12 01:15 AM EST,0.355000,0.000000,0.973000,0.999500
+New England Patriots,Los Angeles Chargers,los-angeles-chargers-new-england-patriots,2026-01-11 08:00 PM EST,2026-01-12 01:15 AM EST,0.645000,1.000000,0.916000,0.863500
+Houston Texans,Pittsburgh Steelers,houston-texans-pittsburgh-steelers,2026-01-12 08:15 PM EST,2026-01-13 01:30 AM EST,0.595000,1.000000,0.937000,0.913500
+Pittsburgh Steelers,Houston Texans,houston-texans-pittsburgh-steelers,2026-01-12 08:15 PM EST,2026-01-13 01:30 AM EST,0.405000,0.000000,0.980500,0.999500
+Buffalo Bills,Denver Broncos,buffalo-bills-denver-broncos,2026-01-17 04:30 PM EST,2026-01-17 09:45 PM EST,0.465000,0.000000,0.865000,0.999500
+Denver Broncos,Buffalo Bills,buffalo-bills-denver-broncos,2026-01-17 04:30 PM EST,2026-01-17 09:45 PM EST,0.535000,1.000000,0.896000,0.919500
+San Francisco 49ers,Seattle Seahawks,san-francisco-49ers-seattle-seahawks,2026-01-17 08:00 PM EST,2026-01-18 01:15 AM EST,0.275000,0.000000,0.947000,0.999500
+Seattle Seahawks,San Francisco 49ers,san-francisco-49ers-seattle-seahawks,2026-01-17 08:00 PM EST,2026-01-18 01:15 AM EST,0.725000,1.000000,0.778500,0.633500
+Houston Texans,New England Patriots,houston-texans-new-england-patriots,2026-01-18 03:00 PM EST,2026-01-18 08:15 PM EST,0.365000,0.000000,0.902000,0.999500
+New England Patriots,Houston Texans,houston-texans-new-england-patriots,2026-01-18 03:00 PM EST,2026-01-18 08:15 PM EST,0.635000,1.000000,0.830500,0.723000
+Los Angeles Rams,Chicago Bears,los-angeles-rams-chicago-bears,2026-01-18 06:30 PM EST,2026-01-18 11:45 PM EST,0.655000,1.000000,0.800500,0.727000
+Chicago Bears,Los Angeles Rams,los-angeles-rams-chicago-bears,2026-01-18 06:30 PM EST,2026-01-18 11:45 PM EST,0.345000,0.000000,0.944000,0.999500
+New England Patriots,Denver Broncos,new-england-patriots-denver-broncos,2026-01-25 03:00 PM EST,2026-01-25 08:15 PM EST,0.655000,1.000000,0.758500,0.634000
+Denver Broncos,New England Patriots,new-england-patriots-denver-broncos,2026-01-25 03:00 PM EST,2026-01-25 08:15 PM EST,0.345000,0.000000,0.917000,0.999500
+Los Angeles Rams,Seattle Seahawks,los-angeles-rams-seattle-seahawks,2026-01-25 06:30 PM EST,2026-01-25 11:45 PM EST,0.445000,0.000000,0.719000,0.999500
+Seattle Seahawks,Los Angeles Rams,los-angeles-rams-seattle-seahawks,2026-01-25 06:30 PM EST,2026-01-25 11:45 PM EST,0.555000,1.000000,0.636500,0.324500

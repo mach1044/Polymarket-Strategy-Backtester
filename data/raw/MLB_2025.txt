@@ -1,0 +1,35 @@
+2025 MLB Postseason - Series Matchups
+Times shown in Eastern Daylight Time (EDT)
+
+Wild Card Series
+
+2025-09-30 1:08 PM | 2025-10-02 8:08 PM | Cleveland Guardians vs Detroit Tigers | series_winner, championship_loss
+2025-09-30 3:08 PM | 2025-10-02 10:08 PM | Chicago Cubs vs San Diego Padres | series_winner, championship_loss
+2025-09-30 6:08 PM | 2025-10-03 1:08 AM | New York Yankees vs Boston Red Sox | series_winner, championship_loss
+2025-09-30 9:08 PM | 2025-10-02 2:08 AM | Los Angeles Dodgers vs Cincinnati Reds | series_winner, championship_loss
+
+Division Series
+
+2025-10-04 8:38 PM | 2025-10-11 1:08 AM | Seattle Mariners vs Detroit Tigers | series_winner, championship_loss
+2025-10-04 4:08 PM | 2025-10-09 12:08 AM | Toronto Blue Jays vs New York Yankees | series_winner, championship_loss
+2025-10-04 2:08 PM | 2025-10-12 1:08 AM | Milwaukee Brewers vs Chicago Cubs | series_winner, championship_loss
+2025-10-04 6:38 PM | 2025-10-09 11:08 PM | Philadelphia Phillies vs Los Angeles Dodgers | series_winner, championship_loss
+
+League Championship Series
+
+2025-10-13 8:08 PM | 2025-10-18 1:38 AM | Milwaukee Brewers vs Los Angeles Dodgers | series_winner, championship_loss
+
+Teams in the Postseason
+
+Boston Red Sox
+Chicago Cubs
+Cincinnati Reds
+Cleveland Guardians
+Detroit Tigers
+Los Angeles Dodgers
+Milwaukee Brewers
+New York Yankees
+Philadelphia Phillies
+San Diego Padres
+Seattle Mariners
+Toronto Blue Jays

@@ -1,0 +1,29 @@
+country,opponent,match,kickoff_edt,end_edt,series_winner_start,series_winner_end,championship_loss_start,championship_loss_end
+Detroit Pistons,Orlando Magic,detroit-pistons-orlando-magic,2026-04-19 06:30 PM EDT,2026-05-03 08:45 PM EDT,0.835000,1.000000,0.956500,0.946500
+Orlando Magic,Detroit Pistons,detroit-pistons-orlando-magic,2026-04-19 06:30 PM EDT,2026-05-03 08:45 PM EDT,0.165000,0.000000,0.998500,0.999500
+Philadelphia 76ers,Boston Celtics,philadelphia-76ers-boston-celtics,2026-04-19 01:00 PM EDT,2026-05-03 12:45 AM EDT,0.065000,1.000000,0.998500,0.968000
+Boston Celtics,Philadelphia 76ers,philadelphia-76ers-boston-celtics,2026-04-19 01:00 PM EDT,2026-05-03 12:45 AM EDT,0.935000,0.000000,0.879500,0.999500
+New York Knicks,Atlanta Hawks,new-york-knicks-atlanta-hawks,2026-04-18 06:00 PM EDT,2026-05-01 12:15 AM EDT,0.770000,1.000000,0.963000,0.943500
+Atlanta Hawks,New York Knicks,new-york-knicks-atlanta-hawks,2026-04-18 06:00 PM EDT,2026-05-01 12:15 AM EDT,0.230000,0.000000,0.995500,0.999500
+Toronto Raptors,Cleveland Cavaliers,toronto-raptors-cleveland-cavaliers,2026-04-18 01:00 PM EDT,2026-05-04 12:45 AM EDT,0.275000,0.000000,0.993000,0.999500
+Cleveland Cavaliers,Toronto Raptors,toronto-raptors-cleveland-cavaliers,2026-04-18 01:00 PM EDT,2026-05-04 12:45 AM EDT,0.725000,1.000000,0.958000,0.956000
+Phoenix Suns,Oklahoma City Thunder,phoenix-suns-oklahoma-city-thunder,2026-04-19 03:30 PM EDT,2026-04-28 02:45 AM EDT,0.025500,0.000000,0.998500,0.999500
+Oklahoma City Thunder,Phoenix Suns,phoenix-suns-oklahoma-city-thunder,2026-04-19 03:30 PM EDT,2026-04-28 02:45 AM EDT,0.974500,1.000000,0.525000,0.485000
+San Antonio Spurs,Portland Trail Blazers,san-antonio-spurs-portland-trail-blazers,2026-04-19 09:00 PM EDT,2026-04-29 02:45 AM EDT,0.930000,1.000000,0.856500,0.827500
+Portland Trail Blazers,San Antonio Spurs,san-antonio-spurs-portland-trail-blazers,2026-04-19 09:00 PM EDT,2026-04-29 02:45 AM EDT,0.070000,0.000000,0.998500,0.999500
+Minnesota Timberwolves,Denver Nuggets,minnesota-timberwolves-denver-nuggets,2026-04-18 03:30 PM EDT,2026-05-01 02:45 AM EDT,0.245000,1.000000,0.989000,0.985500
+Denver Nuggets,Minnesota Timberwolves,minnesota-timberwolves-denver-nuggets,2026-04-18 03:30 PM EDT,2026-05-01 02:45 AM EDT,0.755000,0.000000,0.905000,0.999500
+Los Angeles Lakers,Houston Rockets,los-angeles-lakers-houston-rockets,2026-04-18 08:30 PM EDT,2026-05-02 02:45 AM EDT,0.270000,1.000000,0.983500,0.972500
+Houston Rockets,Los Angeles Lakers,los-angeles-lakers-houston-rockets,2026-04-18 08:30 PM EDT,2026-05-02 02:45 AM EDT,0.730000,0.000000,0.984000,0.999500
+Cleveland Cavaliers,Detroit Pistons,cleveland-cavaliers-detroit-pistons,2026-05-05 07:00 PM EDT,2026-05-18 01:15 AM EDT,0.465000,1.000000,0.960000,0.960500
+Detroit Pistons,Cleveland Cavaliers,cleveland-cavaliers-detroit-pistons,2026-05-05 07:00 PM EDT,2026-05-18 01:15 AM EDT,0.535000,0.000000,0.947500,0.999500
+New York Knicks,Philadelphia 76ers,new-york-knicks-philadelphia-76ers,2026-05-04 08:00 PM EDT,2026-05-10 08:45 PM EDT,0.625000,1.000000,0.912500,0.866000
+Philadelphia 76ers,New York Knicks,new-york-knicks-philadelphia-76ers,2026-05-04 08:00 PM EDT,2026-05-10 08:45 PM EDT,0.375000,0.000000,0.974500,0.999500
+Oklahoma City Thunder,Los Angeles Lakers,oklahoma-city-thunder-los-angeles-lakers,2026-05-05 08:30 PM EDT,2026-05-12 03:45 AM EDT,0.935000,1.000000,0.385000,0.375000
+Los Angeles Lakers,Oklahoma City Thunder,oklahoma-city-thunder-los-angeles-lakers,2026-05-05 08:30 PM EDT,2026-05-12 03:45 AM EDT,0.065000,0.000000,0.972500,0.999500
+San Antonio Spurs,Minnesota Timberwolves,san-antonio-spurs-minnesota-timberwolves,2026-05-04 09:30 PM EDT,2026-05-16 02:45 AM EDT,0.825000,1.000000,0.801500,0.770500
+Minnesota Timberwolves,San Antonio Spurs,san-antonio-spurs-minnesota-timberwolves,2026-05-04 09:30 PM EDT,2026-05-16 02:45 AM EDT,0.175000,0.000000,0.980500,0.999500
+Cleveland Cavaliers,New York Knicks,cleveland-cavaliers-new-york-knicks,2026-05-19 08:00 PM EDT,2026-05-26 01:15 AM EDT,0.290000,0.000000,0.955500,0.999500
+New York Knicks,Cleveland Cavaliers,cleveland-cavaliers-new-york-knicks,2026-05-19 08:00 PM EDT,2026-05-26 01:15 AM EDT,0.705000,1.000000,0.830500,0.713500
+San Antonio Spurs,Oklahoma City Thunder,san-antonio-spurs-oklahoma-city-thunder,2026-05-18 08:30 PM EDT,2026-05-31 01:15 AM EDT,0.305000,1.000000,0.779000,0.356500
+Oklahoma City Thunder,San Antonio Spurs,san-antonio-spurs-oklahoma-city-thunder,2026-05-18 08:30 PM EDT,2026-05-31 01:15 AM EDT,0.700000,0.000000,0.395000,0.999500

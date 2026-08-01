@@ -1,0 +1,43 @@
+2025-26 UEFA Champions League - Men's Knockout Ties
+Times shown in Eastern Daylight Time (EDT)
+
+Round of 16
+
+2026-03-10 4:00 PM | 2026-03-18 5:53 PM | Atalanta vs Bayern München | reach_quarter_finals, championship_loss
+2026-03-10 4:00 PM | 2026-03-18 5:53 PM | Atlético Madrid vs Tottenham Hotspur | reach_quarter_finals, championship_loss
+2026-03-10 4:00 PM | 2026-03-18 3:40 PM | Newcastle vs Barcelona | reach_quarter_finals, championship_loss
+2026-03-11 1:45 PM | 2026-03-17 5:51 PM | Leverkusen vs Arsenal | reach_quarter_finals, championship_loss
+2026-03-11 4:00 PM | 2026-03-17 4:23 PM | Bodø/Glimt vs Sporting CP | reach_quarter_finals, championship_loss
+2026-03-11 4:00 PM | 2026-03-17 5:47 PM | Paris Saint-Germain (PSG) vs Chelsea | reach_quarter_finals, championship_loss
+2026-03-11 4:00 PM | 2026-03-17 5:54 PM | Real Madrid vs Manchester City | reach_quarter_finals, championship_loss
+
+Quarter-finals
+
+2026-04-07 3:00 PM | 2026-04-15 4:52 PM | Sporting CP vs Arsenal | reach_semifinal, championship_loss
+2026-04-07 3:00 PM | 2026-04-15 4:55 PM | Real Madrid vs Bayern München | reach_semifinal, championship_loss
+2026-04-08 3:00 PM | 2026-04-14 5:00 PM | Barcelona vs Atlético Madrid | reach_semifinal, championship_loss
+2026-04-08 3:00 PM | 2026-04-14 5:00 PM | Paris Saint-Germain (PSG) vs Liverpool | reach_semifinal, championship_loss
+
+Semi-finals
+
+2026-04-28 3:00 PM | 2026-05-06 4:59 PM | Paris Saint-Germain (PSG) vs Bayern München | reach_final, championship_loss
+2026-04-29 3:00 PM | 2026-05-05 4:53 PM | Atlético Madrid vs Arsenal | reach_final, championship_loss
+
+Teams in the Knockout Rounds
+
+Arsenal
+Atalanta
+Atlético Madrid
+Barcelona
+Bayern München
+Bodø/Glimt
+Chelsea
+Galatasaray
+Leverkusen
+Liverpool
+Manchester City
+Newcastle
+Paris Saint-Germain (PSG)
+Real Madrid
+Sporting CP
+Tottenham Hotspur

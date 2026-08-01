@@ -1,0 +1,29 @@
+country,opponent,match,kickoff_edt,end_edt,series_winner_start,series_winner_end,championship_loss_start,championship_loss_end
+Pittsburgh Penguins,Philadelphia Flyers,pittsburgh-penguins-philadelphia-flyers,2026-04-18 08:00 PM EDT,2026-04-30 12:45 AM EDT,0.765000,0.000000,0.963500,0.999500
+Philadelphia Flyers,Pittsburgh Penguins,pittsburgh-penguins-philadelphia-flyers,2026-04-18 08:00 PM EDT,2026-04-30 12:45 AM EDT,0.235000,1.000000,0.994500,0.958000
+Buffalo Sabres,Boston Bruins,buffalo-sabres-boston-bruins,2026-04-19 07:30 PM EDT,2026-05-02 12:45 AM EDT,0.625000,1.000000,0.942000,0.922500
+Boston Bruins,Buffalo Sabres,buffalo-sabres-boston-bruins,2026-04-19 07:30 PM EDT,2026-05-02 12:45 AM EDT,0.375000,0.000000,0.980000,0.999500
+Minnesota Wild,Dallas Stars,minnesota-wild-dallas-stars,2026-04-18 05:30 PM EDT,2026-05-01 12:45 AM EDT,0.485000,1.000000,0.952500,0.922500
+Dallas Stars,Minnesota Wild,minnesota-wild-dallas-stars,2026-04-18 05:30 PM EDT,2026-05-01 12:45 AM EDT,0.515000,0.000000,0.937000,0.999500
+Carolina Hurricanes,Ottawa Senators,carolina-hurricanes-ottawa-senators,2026-04-18 03:00 PM EDT,2026-04-25 08:15 PM EDT,0.595000,1.000000,0.865000,0.785000
+Ottawa Senators,Carolina Hurricanes,carolina-hurricanes-ottawa-senators,2026-04-18 03:00 PM EDT,2026-04-25 08:15 PM EDT,0.405000,0.000000,0.948000,0.999500
+Montreal Canadiens,Tampa Bay Lightning,montreal-canadiens-tampa-bay-lightning,2026-04-19 05:45 PM EDT,2026-05-03 11:15 PM EDT,0.330000,1.000000,0.960500,0.913500
+Tampa Bay Lightning,Montreal Canadiens,montreal-canadiens-tampa-bay-lightning,2026-04-19 05:45 PM EDT,2026-05-03 11:15 PM EDT,0.670000,0.000000,0.881000,0.999500
+Utah Mammoth,Vegas Golden Knights,utah-mammoth-vegas-golden-knights,2026-04-19 10:00 PM EDT,2026-05-02 03:15 AM EDT,0.380000,0.000000,0.980500,0.999500
+Vegas Golden Knights,Utah Mammoth,utah-mammoth-vegas-golden-knights,2026-04-19 10:00 PM EDT,2026-05-02 03:15 AM EDT,0.620000,1.000000,0.934500,0.893000
+Anaheim Ducks,Edmonton Oilers,anaheim-ducks-edmonton-oilers,2026-04-20 10:00 PM EDT,2026-05-01 03:15 AM EDT,0.265000,1.000000,0.990500,0.954500
+Edmonton Oilers,Anaheim Ducks,anaheim-ducks-edmonton-oilers,2026-04-20 10:00 PM EDT,2026-05-01 03:15 AM EDT,0.735000,0.000000,0.895000,0.999500
+Colorado Avalanche,Los Angeles Kings,colorado-avalanche-los-angeles-kings,2026-04-19 03:00 PM EDT,2026-04-26 09:45 PM EDT,0.820000,1.000000,0.746500,0.716500
+Los Angeles Kings,Colorado Avalanche,colorado-avalanche-los-angeles-kings,2026-04-19 03:00 PM EDT,2026-04-26 09:45 PM EDT,0.180000,0.000000,0.993500,0.999500
+Colorado Avalanche,Minnesota Wild,colorado-avalanche-minnesota-wild,2026-05-03 09:00 PM EDT,2026-05-14 01:15 AM EDT,0.660000,1.000000,0.699500,0.594500
+Minnesota Wild,Colorado Avalanche,colorado-avalanche-minnesota-wild,2026-05-03 09:00 PM EDT,2026-05-14 01:15 AM EDT,0.340000,0.000000,0.915500,0.999500
+Carolina Hurricanes,Philadelphia Flyers,carolina-hurricanes-philadelphia-flyers,2026-05-02 08:00 PM EDT,2026-05-09 11:15 PM EDT,0.780000,1.000000,0.755000,0.655000
+Philadelphia Flyers,Carolina Hurricanes,carolina-hurricanes-philadelphia-flyers,2026-05-02 08:00 PM EDT,2026-05-09 11:15 PM EDT,0.220000,0.000000,0.974000,0.999500
+Anaheim Ducks,Vegas Golden Knights,anaheim-ducks-vegas-golden-knights,2026-05-04 09:30 PM EDT,2026-05-15 02:45 AM EDT,0.335000,0.000000,0.966500,0.999500
+Vegas Golden Knights,Anaheim Ducks,anaheim-ducks-vegas-golden-knights,2026-05-04 09:30 PM EDT,2026-05-15 02:45 AM EDT,0.665000,1.000000,0.884000,0.865000
+Buffalo Sabres,Montreal Canadiens,buffalo-sabres-montreal-canadiens,2026-05-06 07:00 PM EDT,2026-05-19 12:45 AM EDT,0.550000,0.000000,0.931500,0.999500
+Montreal Canadiens,Buffalo Sabres,buffalo-sabres-montreal-canadiens,2026-05-06 07:00 PM EDT,2026-05-19 12:45 AM EDT,0.450000,1.000000,0.929500,0.907000
+Montreal Canadiens,Carolina Hurricanes,montreal-canadiens-carolina-hurricanes,2026-05-21 08:00 PM EDT,2026-05-30 01:15 AM EDT,0.295000,0.000000,0.892000,0.999500
+Carolina Hurricanes,Montreal Canadiens,montreal-canadiens-carolina-hurricanes,2026-05-21 08:00 PM EDT,2026-05-30 01:15 AM EDT,0.705000,1.000000,0.605000,0.415000
+Colorado Avalanche,Vegas Golden Knights,colorado-avalanche-vegas-golden-knights,2026-05-20 08:00 PM EDT,2026-05-27 02:15 AM EDT,0.675000,0.000000,0.587500,0.999500
+Vegas Golden Knights,Colorado Avalanche,colorado-avalanche-vegas-golden-knights,2026-05-20 08:00 PM EDT,2026-05-27 02:15 AM EDT,0.308500,1.000000,0.868500,0.562500

@@ -1,0 +1,6 @@
+favourite_tier,win_probability_range,matches_played,matches_won,avg_profit_per_100
+big favourite,80%-100%,9,8,1.9900756353289966
+large favourite,60%-<80%,15,13,1.7394666822778433
+middle,40%-<60%,16,8,-0.9775049430493045
+large underdog,20%-<40%,15,2,0.40671587823789257
+big underdog,0%-<20%,9,1,0.12024530783906925

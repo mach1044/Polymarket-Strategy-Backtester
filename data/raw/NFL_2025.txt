@@ -1,0 +1,40 @@
+2025 NFL Postseason - Playoff Games
+Times shown in Eastern Standard Time (EST)
+
+Wild Card Round
+
+2026-01-10 4:30 PM | 2026-01-10 9:30 PM | Los Angeles Rams vs Carolina Panthers | game_winner, championship_loss
+2026-01-10 8:00 PM | 2026-01-11 1:00 AM | Green Bay Packers vs Chicago Bears | game_winner, championship_loss
+2026-01-11 1:00 PM | 2026-01-11 6:00 PM | Buffalo Bills vs Jacksonville Jaguars | game_winner, championship_loss
+2026-01-11 4:30 PM | 2026-01-11 9:30 PM | San Francisco 49ers vs Philadelphia Eagles | game_winner, championship_loss
+2026-01-11 8:00 PM | 2026-01-12 1:00 AM | Los Angeles Chargers vs New England Patriots | game_winner, championship_loss
+2026-01-12 8:15 PM | 2026-01-13 1:15 AM | Houston Texans vs Pittsburgh Steelers | game_winner, championship_loss
+
+Divisional Round
+
+2026-01-17 4:30 PM | 2026-01-17 9:30 PM | Buffalo Bills vs Denver Broncos | game_winner, championship_loss
+2026-01-17 8:00 PM | 2026-01-18 1:00 AM | San Francisco 49ers vs Seattle Seahawks | game_winner, championship_loss
+2026-01-18 3:00 PM | 2026-01-18 8:00 PM | Houston Texans vs New England Patriots | game_winner, championship_loss
+2026-01-18 6:30 PM | 2026-01-18 11:30 PM | Los Angeles Rams vs Chicago Bears | game_winner, championship_loss
+
+Conference Championships
+
+2026-01-25 3:00 PM | 2026-01-25 8:00 PM | New England Patriots vs Denver Broncos | game_winner, championship_loss
+2026-01-25 6:30 PM | 2026-01-25 11:30 PM | Los Angeles Rams vs Seattle Seahawks | game_winner, championship_loss
+
+Teams in the Postseason
+
+Buffalo Bills
+Carolina Panthers
+Chicago Bears
+Denver Broncos
+Green Bay Packers
+Houston Texans
+Jacksonville Jaguars
+Los Angeles Chargers
+Los Angeles Rams
+New England Patriots
+Philadelphia Eagles
+Pittsburgh Steelers
+San Francisco 49ers
+Seattle Seahawks

@@ -1,0 +1,39 @@
+2026 NBA Playoffs - Knockout Matchups
+Times shown in Eastern Daylight Time (EDT)
+
+2026-04-19 6:30 PM | 2026-05-03 8:30 PM | Detroit Pistons vs Orlando Magic | series_winner, championship_loss
+2026-04-19 1:00 PM | 2026-05-03 12:30 AM | Philadelphia 76ers vs Boston Celtics | series_winner, championship_loss
+2026-04-18 6:00 PM | 2026-05-01 12:00 AM | New York Knicks vs Atlanta Hawks | series_winner, championship_loss
+2026-04-18 1:00 PM | 2026-05-04 12:30 AM | Toronto Raptors vs Cleveland Cavaliers | series_winner, championship_loss
+2026-04-19 3:30 PM | 2026-04-28 2:30 AM | Phoenix Suns vs Oklahoma City Thunder | series_winner, championship_loss
+2026-04-19 9:00 PM | 2026-04-29 2:30 AM | San Antonio Spurs vs Portland Trail Blazers | series_winner, championship_loss
+2026-04-18 3:30 PM | 2026-05-01 2:30 AM | Minnesota Timberwolves vs Denver Nuggets | series_winner, championship_loss
+2026-04-18 8:30 PM | 2026-05-02 2:30 AM | Los Angeles Lakers vs Houston Rockets | series_winner, championship_loss
+2026-05-05 7:00 PM | 2026-05-18 1:00 AM | Cleveland Cavaliers vs Detroit Pistons | series_winner, championship_loss
+2026-05-04 8:00 PM | 2026-05-10 8:30 PM | New York Knicks vs Philadelphia 76ers | series_winner, championship_loss
+2026-05-05 8:30 PM | 2026-05-12 3:30 AM | Oklahoma City Thunder vs Los Angeles Lakers | series_winner, championship_loss
+2026-05-04 9:30 PM | 2026-05-16 2:30 AM | San Antonio Spurs vs Minnesota Timberwolves | series_winner, championship_loss
+
+Conference Finals
+
+2026-05-19 8:00 PM | 2026-05-26 1:00 AM | Cleveland Cavaliers vs New York Knicks | advance_to_finals, championship_loss
+2026-05-18 8:30 PM | 2026-05-31 1:00 AM | San Antonio Spurs vs Oklahoma City Thunder | advance_to_finals, championship_loss
+
+Teams in the Knockout Stage
+
+Atlanta Hawks
+Boston Celtics
+Cleveland Cavaliers
+Denver Nuggets
+Detroit Pistons
+Houston Rockets
+Los Angeles Lakers
+Minnesota Timberwolves
+New York Knicks
+Oklahoma City Thunder
+Orlando Magic
+Philadelphia 76ers
+Phoenix Suns
+Portland Trail Blazers
+San Antonio Spurs
+Toronto Raptors

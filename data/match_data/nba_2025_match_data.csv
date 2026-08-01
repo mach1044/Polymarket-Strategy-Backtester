@@ -1,0 +1,29 @@
+country,opponent,match,kickoff_edt,end_edt,series_winner_start,series_winner_end,championship_loss_start,championship_loss_end
+Denver Nuggets,Los Angeles Clippers,denver-nuggets-los-angeles-clippers,2025-04-19 03:30 PM EDT,2025-05-03 10:11 PM EDT,0.475000,1.000000,0.971500,0.959000
+Los Angeles Clippers,Denver Nuggets,denver-nuggets-los-angeles-clippers,2025-04-19 03:30 PM EDT,2025-05-03 10:11 PM EDT,0.525000,0.000000,0.959500,0.999500
+Indiana Pacers,Milwaukee Bucks,indiana-pacers-milwaukee-bucks,2025-04-19 01:00 PM EDT,2025-04-29 09:10 PM EDT,0.595000,1.000000,0.993000,0.986000
+Milwaukee Bucks,Indiana Pacers,indiana-pacers-milwaukee-bucks,2025-04-19 01:00 PM EDT,2025-04-29 09:10 PM EDT,0.405000,0.000000,0.993000,0.999500
+Los Angeles Lakers,Minnesota Timberwolves,los-angeles-lakers-minnesota-timberwolves,2025-04-19 08:30 PM EDT,2025-05-01 01:08 AM EDT,0.645000,0.000000,0.918000,0.999500
+Minnesota Timberwolves,Los Angeles Lakers,los-angeles-lakers-minnesota-timberwolves,2025-04-19 08:30 PM EDT,2025-05-01 01:08 AM EDT,0.355000,1.000000,0.987500,0.948000
+New York Knicks,Detroit Pistons,new-york-knicks-detroit-pistons,2025-04-19 06:00 PM EDT,2025-05-01 10:44 PM EDT,0.785000,1.000000,0.978500,0.974500
+Detroit Pistons,New York Knicks,new-york-knicks-detroit-pistons,2025-04-19 06:00 PM EDT,2025-05-01 10:44 PM EDT,0.215000,0.000000,0.997500,0.999500
+Houston Rockets,Golden State Warriors,houston-rockets-golden-state-warriors,2025-04-20 09:30 PM EDT,2025-05-04 11:21 PM EDT,0.385000,0.000000,0.981500,0.999500
+Golden State Warriors,Houston Rockets,houston-rockets-golden-state-warriors,2025-04-20 09:30 PM EDT,2025-05-04 11:21 PM EDT,0.615000,1.000000,0.958000,0.936000
+Boston Celtics,Orlando Magic,boston-celtics-orlando-magic,2025-04-20 03:30 PM EDT,2025-04-29 11:27 PM EDT,0.969500,1.000000,0.710000,0.725000
+Orlando Magic,Boston Celtics,boston-celtics-orlando-magic,2025-04-20 03:30 PM EDT,2025-04-29 11:27 PM EDT,0.030500,0.000000,0.998500,0.999000
+Cleveland Cavaliers,Miami Heat,cleveland-cavaliers-miami-heat,2025-04-20 07:00 PM EDT,2025-04-28 10:09 PM EDT,0.949500,1.000000,0.881000,0.848500
+Miami Heat,Cleveland Cavaliers,cleveland-cavaliers-miami-heat,2025-04-20 07:00 PM EDT,2025-04-28 10:09 PM EDT,0.050500,0.000000,0.999500,0.999500
+Oklahoma City Thunder,Memphis Grizzlies,oklahoma-city-thunder-memphis-grizzlies,2025-04-20 01:00 PM EDT,2025-04-26 06:33 PM EDT,0.951000,1.000000,0.655000,0.645000
+Memphis Grizzlies,Oklahoma City Thunder,oklahoma-city-thunder-memphis-grizzlies,2025-04-20 01:00 PM EDT,2025-04-26 06:33 PM EDT,0.049000,0.000000,0.997500,0.999500
+Cleveland Cavaliers,Indiana Pacers,cleveland-cavaliers-indiana-pacers,2025-05-04 06:00 PM EDT,2025-05-13 09:57 PM EDT,0.815000,0.000000,0.838500,0.999500
+Indiana Pacers,Cleveland Cavaliers,cleveland-cavaliers-indiana-pacers,2025-05-04 06:00 PM EDT,2025-05-13 09:57 PM EDT,0.185000,1.000000,0.987000,0.891000
+Boston Celtics,New York Knicks,boston-celtics-new-york-knicks,2025-05-05 07:00 PM EDT,2025-05-16 10:50 PM EDT,0.865000,0.000000,0.695000,0.999500
+New York Knicks,Boston Celtics,boston-celtics-new-york-knicks,2025-05-05 07:00 PM EDT,2025-05-16 10:50 PM EDT,0.135000,1.000000,0.981500,0.816000
+Oklahoma City Thunder,Denver Nuggets,oklahoma-city-thunder-denver-nuggets,2025-05-05 09:30 PM EDT,2025-05-18 06:17 PM EDT,0.860000,1.000000,0.595000,0.405000
+Denver Nuggets,Oklahoma City Thunder,oklahoma-city-thunder-denver-nuggets,2025-05-05 09:30 PM EDT,2025-05-18 06:17 PM EDT,0.140000,0.000000,0.963500,0.999500
+Minnesota Timberwolves,Golden State Warriors,minnesota-timberwolves-golden-state-warriors,2025-05-06 09:30 PM EDT,2025-05-15 12:28 AM EDT,0.650000,1.000000,0.924000,0.838000
+Golden State Warriors,Minnesota Timberwolves,minnesota-timberwolves-golden-state-warriors,2025-05-06 09:30 PM EDT,2025-05-15 12:28 AM EDT,0.350000,0.000000,0.955500,0.999500
+Indiana Pacers,New York Knicks,indiana-pacers-new-york-knicks,2025-05-21 08:00 PM EDT,2025-05-31 10:51 PM EDT,0.405000,1.000000,0.897000,0.841500
+New York Knicks,Indiana Pacers,indiana-pacers-new-york-knicks,2025-05-21 08:00 PM EDT,2025-05-31 10:51 PM EDT,0.595000,0.000000,0.852500,0.999500
+Oklahoma City Thunder,Minnesota Timberwolves,oklahoma-city-thunder-minnesota-timberwolves,2025-05-20 08:30 PM EDT,2025-05-28 11:13 PM EDT,0.755000,1.000000,0.395000,0.200000
+Minnesota Timberwolves,Oklahoma City Thunder,oklahoma-city-thunder-minnesota-timberwolves,2025-05-20 08:30 PM EDT,2025-05-28 11:13 PM EDT,0.245000,0.000000,0.849500,0.999500

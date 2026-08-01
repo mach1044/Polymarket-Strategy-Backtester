@@ -1,0 +1,70 @@
+FIFA World Cup 2026 - Knockout Matches
+Times shown in Eastern Daylight Time (EDT)
+
+2026-06-28 3:00 PM | 2026-06-28 8:00 PM | South Africa vs Canada
+2026-06-29 1:00 PM | 2026-06-29 6:00 PM | Brazil vs Japan
+2026-06-29 4:30 PM | 2026-06-29 9:30 PM | Germany vs Paraguay
+2026-06-29 9:00 PM | 2026-06-30 2:00 AM | Netherlands vs Morocco
+2026-06-30 1:00 PM | 2026-06-30 6:00 PM | Ivory Coast vs Norway
+2026-06-30 5:00 PM | 2026-06-30 10:00 PM | France vs Sweden
+2026-06-30 10:00 PM | 2026-07-01 3:00 AM | Mexico vs Ecuador
+2026-07-01 12:00 PM | 2026-07-01 5:00 PM | England vs Congo DR
+2026-07-01 4:00 PM | 2026-07-01 9:00 PM | Belgium vs Senegal
+2026-07-01 8:00 PM | 2026-07-02 1:00 AM | United States vs Bosnia-Herzegovina
+2026-07-02 3:00 PM | 2026-07-02 8:00 PM | Spain vs Austria
+2026-07-02 7:00 PM | 2026-07-03 12:00 AM | Portugal vs Croatia
+2026-07-02 11:00 PM | 2026-07-03 4:00 AM | Switzerland vs Algeria
+2026-07-03 2:00 PM | 2026-07-03 7:00 PM | Australia vs Egypt
+2026-07-03 6:00 PM | 2026-07-03 11:00 PM | Argentina vs Cape Verde
+2026-07-03 9:30 PM | 2026-07-04 2:30 AM | Colombia vs Ghana
+2026-07-04 1:00 PM | 2026-07-04 6:00 PM | Canada vs Morocco
+2026-07-04 5:00 PM | 2026-07-04 10:00 PM | Paraguay vs France
+2026-07-05 4:00 PM | 2026-07-05 9:00 PM | Brazil vs Norway
+2026-07-05 9:00 PM | 2026-07-06 2:00 AM | Mexico vs England
+2026-07-06 3:00 PM | 2026-07-06 8:00 PM | Portugal vs Spain
+2026-07-06 8:00 PM | 2026-07-07 1:00 AM | United States vs Belgium
+2026-07-07 12:00 PM | 2026-07-07 5:00 PM | Argentina vs Egypt
+2026-07-07 4:00 PM | 2026-07-07 9:00 PM | Switzerland vs Colombia
+2026-07-09 4:00 PM | 2026-07-09 9:00 PM | France vs Morocco
+2026-07-10 3:00 PM | 2026-07-10 8:00 PM | Spain vs Belgium
+2026-07-11 5:00 PM | 2026-07-11 10:00 PM | Norway vs England
+2026-07-11 9:00 PM | 2026-07-12 2:00 AM | Argentina vs Switzerland
+2026-07-14 3:00 PM | 2026-07-14 8:00 PM | France vs Spain
+2026-07-15 3:00 PM | 2026-07-15 8:00 PM | England vs Argentina
+2026-07-18 5:00 PM | 2026-07-18 10:00 PM | France vs England
+2026-07-19 3:00 PM | 2026-07-19 8:00 PM | Spain vs Argentina
+
+Countries in the Knockout Stage
+
+Algeria
+Argentina
+Australia
+Austria
+Belgium
+Bosnia-Herzegovina
+Brazil
+Canada
+Cape Verde
+Colombia
+Congo DR
+Croatia
+Ecuador
+Egypt
+England
+France
+Germany
+Ghana
+Ivory Coast
+Japan
+Mexico
+Morocco
+Netherlands
+Norway
+Paraguay
+Portugal
+Senegal
+South Africa
+Spain
+Sweden
+Switzerland
+United States

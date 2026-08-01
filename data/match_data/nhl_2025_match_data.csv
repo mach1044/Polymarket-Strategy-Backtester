@@ -1,0 +1,29 @@
+country,opponent,match,kickoff_edt,end_edt,series_winner_start,series_winner_end,championship_loss_start,championship_loss_end
+Dallas Stars,Colorado Avalanche,dallas-stars-colorado-avalanche,2025-04-19 08:55 PM EDT,2025-05-03 11:02 PM EDT,0.360000,1.000000,0.935000,0.874500
+Colorado Avalanche,Dallas Stars,dallas-stars-colorado-avalanche,2025-04-19 08:55 PM EDT,2025-05-03 11:02 PM EDT,0.640000,0.000000,0.890000,0.999500
+Carolina Hurricanes,New Jersey Devils,carolina-hurricanes-new-jersey-devils,2025-04-20 03:15 PM EDT,2025-04-29 11:39 PM EDT,0.745000,1.000000,0.905000,0.840000
+New Jersey Devils,Carolina Hurricanes,carolina-hurricanes-new-jersey-devils,2025-04-20 03:15 PM EDT,2025-04-29 11:39 PM EDT,0.255000,0.000000,0.977500,0.999500
+Edmonton Oilers,Los Angeles Kings,edmonton-oilers-los-angeles-kings,2025-04-21 10:22 PM EDT,2025-05-02 01:10 AM EDT,0.305000,1.000000,0.910000,0.850000
+Los Angeles Kings,Edmonton Oilers,edmonton-oilers-los-angeles-kings,2025-04-21 10:22 PM EDT,2025-05-02 01:10 AM EDT,0.695000,0.000000,0.947000,0.999500
+Toronto Maple Leafs,Ottawa Senators,toronto-maple-leafs-ottawa-senators,2025-04-20 07:10 PM EDT,2025-05-01 09:47 PM EDT,0.820000,1.000000,0.925000,0.890000
+Ottawa Senators,Toronto Maple Leafs,toronto-maple-leafs-ottawa-senators,2025-04-20 07:10 PM EDT,2025-05-01 09:47 PM EDT,0.180000,0.000000,0.977000,0.999500
+Tampa Bay Lightning,Florida Panthers,tampa-bay-lightning-florida-panthers,2025-04-22 08:49 PM EDT,2025-04-30 10:33 PM EDT,0.495000,0.000000,0.925500,0.999500
+Florida Panthers,Tampa Bay Lightning,tampa-bay-lightning-florida-panthers,2025-04-22 08:49 PM EDT,2025-04-30 10:33 PM EDT,0.505000,1.000000,0.910000,0.815000
+Winnipeg Jets,St. Louis Blues,winnipeg-jets-st-louis-blues,2025-04-19 06:15 PM EDT,2025-05-04 11:20 PM EDT,0.830000,1.000000,0.870500,0.890500
+St. Louis Blues,Winnipeg Jets,winnipeg-jets-st-louis-blues,2025-04-19 06:15 PM EDT,2025-05-04 11:20 PM EDT,0.170000,0.000000,0.977500,0.999500
+Vegas Golden Knights,Minnesota Wild,vegas-golden-knights-minnesota-wild,2025-04-20 10:10 PM EDT,2025-05-01 10:29 PM EDT,0.840000,1.000000,0.915000,0.900000
+Minnesota Wild,Vegas Golden Knights,vegas-golden-knights-minnesota-wild,2025-04-20 10:10 PM EDT,2025-05-01 10:29 PM EDT,0.160000,0.000000,0.983500,0.999500
+Washington Capitals,Montreal Canadiens,washington-capitals-montreal-canadiens,2025-04-21 07:12 PM EDT,2025-04-30 10:03 PM EDT,0.720000,1.000000,0.937000,0.915500
+Montreal Canadiens,Washington Capitals,washington-capitals-montreal-canadiens,2025-04-21 07:12 PM EDT,2025-04-30 10:03 PM EDT,0.280000,0.000000,0.978500,0.999500
+Winnipeg Jets,Dallas Stars,winnipeg-jets-dallas-stars,2025-05-07 09:30 PM EDT,2025-05-17 11:17 PM EDT,0.395000,0.000000,0.901500,0.999500
+Dallas Stars,Winnipeg Jets,winnipeg-jets-dallas-stars,2025-05-07 09:30 PM EDT,2025-05-17 11:17 PM EDT,0.605000,1.000000,0.844000,0.761000
+Washington Capitals,Carolina Hurricanes,washington-capitals-carolina-hurricanes,2025-05-06 07:10 PM EDT,2025-05-15 09:58 PM EDT,0.180000,0.000000,0.923000,0.999500
+Carolina Hurricanes,Washington Capitals,washington-capitals-carolina-hurricanes,2025-05-06 07:10 PM EDT,2025-05-15 09:58 PM EDT,0.820000,1.000000,0.855000,0.775000
+Toronto Maple Leafs,Florida Panthers,toronto-maple-leafs-florida-panthers,2025-05-05 08:12 PM EDT,2025-05-18 10:31 PM EDT,0.365000,0.000000,0.910000,0.999500
+Florida Panthers,Toronto Maple Leafs,toronto-maple-leafs-florida-panthers,2025-05-05 08:12 PM EDT,2025-05-18 10:31 PM EDT,0.635000,1.000000,0.790000,0.735000
+Vegas Golden Knights,Edmonton Oilers,vegas-golden-knights-edmonton-oilers,2025-05-06 09:50 PM EDT,2025-05-15 12:56 AM EDT,0.485000,0.000000,0.865000,0.999500
+Edmonton Oilers,Vegas Golden Knights,vegas-golden-knights-edmonton-oilers,2025-05-06 09:50 PM EDT,2025-05-15 12:56 AM EDT,0.515000,1.000000,0.874500,0.732500
+Carolina Hurricanes,Florida Panthers,carolina-hurricanes-florida-panthers,2025-05-20 08:12 PM EDT,2025-05-28 11:12 PM EDT,0.475000,0.000000,0.780000,0.999500
+Florida Panthers,Carolina Hurricanes,carolina-hurricanes-florida-panthers,2025-05-20 08:12 PM EDT,2025-05-28 11:12 PM EDT,0.520000,1.000000,0.720000,0.490000
+Dallas Stars,Edmonton Oilers,dallas-stars-edmonton-oilers,2025-05-21 08:20 PM EDT,2025-05-29 10:55 PM EDT,0.410000,0.000000,0.792500,0.999500
+Edmonton Oilers,Dallas Stars,dallas-stars-edmonton-oilers,2025-05-21 08:20 PM EDT,2025-05-29 10:55 PM EDT,0.520000,1.000000,0.736500,0.523500

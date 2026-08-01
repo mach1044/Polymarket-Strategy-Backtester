@@ -1,0 +1,26 @@
+2025 League of Legends World Championship - Knockout Stage
+Times shown in fixed Eastern Standard Time (EST, UTC-5)
+Series close timestamps are rounded up to the first full minute.
+
+Quarterfinals
+
+2025-10-28 2:00 AM | 2025-10-28 8:00 AM | Gen.G vs Hanwha Life Esports | series_winner, championship_loss
+2025-10-29 2:00 AM | 2025-10-29 6:32 AM | KT Rolster vs CTBC Flying Oyster | series_winner, championship_loss
+2025-10-30 2:00 AM | 2025-10-30 7:27 AM | G2 Esports vs Top Esports | series_winner, championship_loss
+2025-10-31 2:00 AM | 2025-10-31 8:49 AM | Anyone's Legend vs T1 | series_winner, championship_loss
+
+Semifinals
+
+2025-11-01 2:00 AM | 2025-11-01 7:57 AM | Gen.G vs KT Rolster | series_winner, championship_loss
+2025-11-02 2:00 AM | 2025-11-02 7:28 AM | T1 vs Top Esports | series_winner, championship_loss
+
+Teams in the Knockout Stage
+
+Anyone's Legend
+CTBC Flying Oyster
+G2 Esports
+Gen.G
+Hanwha Life Esports
+KT Rolster
+T1
+Top Esports

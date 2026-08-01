@@ -1,0 +1,44 @@
+2026 NHL Playoffs - Series Matchups
+Times shown in Eastern Daylight Time (EDT)
+
+First Round
+
+2026-04-18 8:00 PM | 2026-04-30 12:30 AM | Pittsburgh Penguins vs Philadelphia Flyers | series_winner, championship_loss
+2026-04-19 7:30 PM | 2026-05-02 12:30 AM | Buffalo Sabres vs Boston Bruins | series_winner, championship_loss
+2026-04-18 5:30 PM | 2026-05-01 12:30 AM | Minnesota Wild vs Dallas Stars | series_winner, championship_loss
+2026-04-18 3:00 PM | 2026-04-25 8:00 PM | Carolina Hurricanes vs Ottawa Senators | series_winner, championship_loss
+2026-04-19 5:45 PM | 2026-05-03 11:00 PM | Montreal Canadiens vs Tampa Bay Lightning | series_winner, championship_loss
+2026-04-19 10:00 PM | 2026-05-02 3:00 AM | Utah Mammoth vs Vegas Golden Knights | series_winner, championship_loss
+2026-04-20 10:00 PM | 2026-05-01 3:00 AM | Anaheim Ducks vs Edmonton Oilers | series_winner, championship_loss
+2026-04-19 3:00 PM | 2026-04-26 9:30 PM | Colorado Avalanche vs Los Angeles Kings | series_winner, championship_loss
+
+Second Round
+
+2026-05-03 9:00 PM | 2026-05-14 1:00 AM | Colorado Avalanche vs Minnesota Wild | series_winner, championship_loss
+2026-05-02 8:00 PM | 2026-05-09 11:00 PM | Carolina Hurricanes vs Philadelphia Flyers | series_winner, championship_loss
+2026-05-04 9:30 PM | 2026-05-15 2:30 AM | Anaheim Ducks vs Vegas Golden Knights | series_winner, championship_loss
+2026-05-06 7:00 PM | 2026-05-19 12:30 AM | Buffalo Sabres vs Montreal Canadiens | series_winner, championship_loss
+
+Conference Finals
+
+2026-05-21 8:00 PM | 2026-05-30 1:00 AM | Montreal Canadiens vs Carolina Hurricanes | east_champion, championship_loss
+2026-05-20 8:00 PM | 2026-05-27 2:00 AM | Colorado Avalanche vs Vegas Golden Knights | west_champion, championship_loss
+
+Teams in the Playoffs
+
+Anaheim Ducks
+Boston Bruins
+Buffalo Sabres
+Carolina Hurricanes
+Colorado Avalanche
+Dallas Stars
+Edmonton Oilers
+Los Angeles Kings
+Minnesota Wild
+Montreal Canadiens
+Ottawa Senators
+Philadelphia Flyers
+Pittsburgh Penguins
+Tampa Bay Lightning
+Utah Mammoth
+Vegas Golden Knights

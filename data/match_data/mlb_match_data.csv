@@ -1,0 +1,19 @@
+country,opponent,match,kickoff_edt,end_edt,series_winner_start,series_winner_end,championship_loss_start,championship_loss_end
+Cleveland Guardians,Detroit Tigers,cleveland-guardians-detroit-tigers,2025-09-30 01:08 PM EDT,2025-10-02 08:23 PM EDT,0.455000,0.000000,0.972500,0.999500
+Detroit Tigers,Cleveland Guardians,cleveland-guardians-detroit-tigers,2025-09-30 01:08 PM EDT,2025-10-02 08:23 PM EDT,0.545000,1.000000,0.957500,0.935000
+Chicago Cubs,San Diego Padres,chicago-cubs-san-diego-padres,2025-09-30 03:08 PM EDT,2025-10-02 10:23 PM EDT,0.535000,1.000000,0.942500,0.914500
+San Diego Padres,Chicago Cubs,chicago-cubs-san-diego-padres,2025-09-30 03:08 PM EDT,2025-10-02 10:23 PM EDT,0.465000,0.000000,0.951500,0.999500
+New York Yankees,Boston Red Sox,new-york-yankees-boston-red-sox,2025-09-30 06:08 PM EDT,2025-10-03 01:23 AM EDT,0.630000,1.000000,0.905000,0.825000
+Boston Red Sox,New York Yankees,new-york-yankees-boston-red-sox,2025-09-30 06:08 PM EDT,2025-10-03 01:23 AM EDT,0.370000,0.000000,0.962000,0.999500
+Los Angeles Dodgers,Cincinnati Reds,los-angeles-dodgers-cincinnati-reds,2025-09-30 09:08 PM EDT,2025-10-02 02:23 AM EDT,0.730000,1.000000,0.835000,0.780000
+Cincinnati Reds,Los Angeles Dodgers,los-angeles-dodgers-cincinnati-reds,2025-09-30 09:08 PM EDT,2025-10-02 02:23 AM EDT,0.270000,0.000000,0.980000,0.999500
+Seattle Mariners,Detroit Tigers,seattle-mariners-detroit-tigers,2025-10-04 08:38 PM EDT,2025-10-11 01:23 AM EDT,0.595000,1.000000,0.842000,0.804500
+Detroit Tigers,Seattle Mariners,seattle-mariners-detroit-tigers,2025-10-04 08:38 PM EDT,2025-10-11 01:23 AM EDT,0.405000,0.000000,0.947500,0.999500
+Toronto Blue Jays,New York Yankees,toronto-blue-jays-new-york-yankees,2025-10-04 04:08 PM EDT,2025-10-09 12:23 AM EDT,0.415000,1.000000,0.912500,0.822000
+New York Yankees,Toronto Blue Jays,toronto-blue-jays-new-york-yankees,2025-10-04 04:08 PM EDT,2025-10-09 12:23 AM EDT,0.585000,0.000000,0.830000,0.999500
+Milwaukee Brewers,Chicago Cubs,milwaukee-brewers-chicago-cubs,2025-10-04 02:08 PM EDT,2025-10-12 01:23 AM EDT,0.545000,1.000000,0.905000,0.826500
+Chicago Cubs,Milwaukee Brewers,milwaukee-brewers-chicago-cubs,2025-10-04 02:08 PM EDT,2025-10-12 01:23 AM EDT,0.455000,0.000000,0.918500,0.999500
+Philadelphia Phillies,Los Angeles Dodgers,philadelphia-phillies-los-angeles-dodgers,2025-10-04 06:38 PM EDT,2025-10-09 11:23 PM EDT,0.420000,0.000000,0.853000,0.999500
+Los Angeles Dodgers,Philadelphia Phillies,philadelphia-phillies-los-angeles-dodgers,2025-10-04 06:38 PM EDT,2025-10-09 11:23 PM EDT,0.580000,1.000000,0.780000,0.605000
+Milwaukee Brewers,Los Angeles Dodgers,milwaukee-brewers-los-angeles-dodgers,2025-10-13 08:08 PM EDT,2025-10-18 01:53 AM EDT,0.280000,0.000000,0.848500,0.999500
+Los Angeles Dodgers,Milwaukee Brewers,milwaukee-brewers-los-angeles-dodgers,2025-10-13 08:08 PM EDT,2025-10-18 01:53 AM EDT,0.720000,1.000000,0.575000,0.305000

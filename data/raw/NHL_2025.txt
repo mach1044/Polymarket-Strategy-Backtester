@@ -1,0 +1,44 @@
+2025 NHL Playoffs - Series Matchups
+Times shown in Eastern Daylight Time (EDT)
+
+First Round
+
+2025-04-19 8:55 PM | 2025-05-03 10:47 PM | Dallas Stars vs Colorado Avalanche | to_advance, championship_loss
+2025-04-20 3:15 PM | 2025-04-29 11:24 PM | Carolina Hurricanes vs New Jersey Devils | to_advance, championship_loss
+2025-04-21 10:22 PM | 2025-05-02 12:55 AM | Edmonton Oilers vs Los Angeles Kings | to_advance, championship_loss
+2025-04-20 7:10 PM | 2025-05-01 9:32 PM | Toronto Maple Leafs vs Ottawa Senators | to_advance, championship_loss
+2025-04-22 8:49 PM | 2025-04-30 10:18 PM | Tampa Bay Lightning vs Florida Panthers | to_advance, championship_loss
+2025-04-19 6:15 PM | 2025-05-04 11:05 PM | Winnipeg Jets vs St. Louis Blues | to_advance, championship_loss
+2025-04-20 10:10 PM | 2025-05-01 10:14 PM | Vegas Golden Knights vs Minnesota Wild | to_advance, championship_loss
+2025-04-21 7:12 PM | 2025-04-30 9:48 PM | Washington Capitals vs Montreal Canadiens | to_advance, championship_loss
+
+Second Round
+
+2025-05-07 9:30 PM | 2025-05-17 11:02 PM | Winnipeg Jets vs Dallas Stars | to_advance, championship_loss
+2025-05-06 7:10 PM | 2025-05-15 9:43 PM | Washington Capitals vs Carolina Hurricanes | to_advance, championship_loss
+2025-05-05 8:12 PM | 2025-05-18 10:16 PM | Toronto Maple Leafs vs Florida Panthers | to_advance, championship_loss
+2025-05-06 9:50 PM | 2025-05-15 12:41 AM | Vegas Golden Knights vs Edmonton Oilers | to_advance, championship_loss
+
+Conference Finals
+
+2025-05-20 8:12 PM | 2025-05-28 10:57 PM | Carolina Hurricanes vs Florida Panthers | east_champion, championship_loss
+2025-05-21 8:20 PM | 2025-05-29 10:40 PM | Dallas Stars vs Edmonton Oilers | west_champion, championship_loss
+
+Teams in the Playoffs
+
+Carolina Hurricanes
+Colorado Avalanche
+Dallas Stars
+Edmonton Oilers
+Florida Panthers
+Los Angeles Kings
+Minnesota Wild
+Montreal Canadiens
+New Jersey Devils
+Ottawa Senators
+St. Louis Blues
+Tampa Bay Lightning
+Toronto Maple Leafs
+Vegas Golden Knights
+Washington Capitals
+Winnipeg Jets
