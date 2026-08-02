@@ -1,0 +1,2 @@
+training_sports,evaluation_sports,feature_set,target,training_rows,training_r_squared,external_rows,external_selected,external_selected_average_target,external_mae,external_median_absolute_error,external_rmse,external_r_squared,selected_engine_pnl,selected_average_engine_pnl,all_engine_pnl,all_average_engine_pnl
+ucl_2026;wimbledon_2026;nhl;nhl_2025,fifa;lol_worlds_2025;mlb;nba;nba_2025;nfl,p_p2,strategy_ev_relative,124,0.1377315052,174,89,0.1143652338,0.7454707679,0.4477380595,1.187988315,-2.159036931,57.28378222,0.6436380024,25.82867916,0.1484406848

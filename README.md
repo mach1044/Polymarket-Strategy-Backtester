@@ -1,159 +1,97 @@
-# Polymarket Sports Research and Backtesting
+# Polymarket Sports Hedge Research
 
-A configuration-driven Python project for collecting historical Polymarket
-sports prices, normalizing team and event names, and backtesting related
-binary-contract strategies across multiple competitions. The repository
-currently contains 10 sport-season configurations, 149 historical matchups,
-and 298 team-side observations.
+## Project overview
 
-This is an exploratory research system, not a live trading system. Reported
-results are in-sample and do not yet model historical order-book depth,
-bid/ask spreads, slippage, fill probability, or position-size capacity.
+This project began with an observation from the 2026 FIFA World Cup markets.
+After a team won a match, its probability of winning the tournament did not
+always move by the amount implied by its pre-match win probability. The
+game-winner and tournament-winner markets appeared to be pricing related
+events differently.
 
-## What the project does
+The research question was whether that mismatch could support a repeatable
+dynamic hedge. The proposed trade combines:
 
-```text
-Fixture schedules
-       |
-       v
-Shared Polymarket ingestion + aliases
-       |
-       v
-Normalized match-price CSVs
-       |
-       v
-Shared strategies -> BacktestEngine
-       |
-       v
-P&L, risk metrics, threshold sweeps, and analysis CSVs
-```
+1. A position on a team winning its next match, series, or advancement event.
+2. A position on the same team **not** winning the championship.
 
-The main components are:
+If the team loses the triggering event, the championship-loss position protects
+the trade. If the team wins, both positions are closed after the championship
+market reprices. The trade is profitable when the championship probability
+rises less than the move implied by the trigger market.
 
-- A shared ingestion program using Polymarket's Gamma and CLOB APIs.
-- Centralized aliases and market definitions instead of sport-specific
-  ingestion programs.
-- An event-driven backtesting engine that owns cash, positions, orders, fees,
-  realized P&L, equity, and drawdown accounting.
-- Shared sport configuration, so one strategy implementation works with every
-  supported dataset.
-- Automated threshold analysis and pooled multi-sport reporting.
-- A standard-library-only test suite with 71 tests.
+The project expanded this idea beyond FIFA to NBA, NHL, MLB, NFL, League of
+Legends Worlds, men's Wimbledon, and men's UEFA Champions League markets. It
+now includes a shared data-ingestion pipeline, an event-driven backtesting
+engine, rule-based strategies, and ridge-regression experiments.
 
-## Repository layout
+This is an exploratory quant-research project, not a live trading system.
 
-```text
-README.md              Main project documentation
-data/raw/              Fixture schedules used as ingestion inputs
-data/match_data/       Generated historical Polymarket price CSVs
-data/analysis/         Generated backtest and exploration outputs
-data_ingestion/        Shared ingestion program and alias configuration
-backtesting/           Engine, strategies, sport config, and CSV adapter
-analysis/              Exploratory analysis and result-combining utilities
-tests/                 Automated unit and integration-style tests
-```
+## Research workflow
 
-The main README belongs here at the repository root. The
-[backtesting README](backtesting/README.md) provides additional implementation
-and dataset details.
+1. **Define the matches to collect.** Text files in `data/raw/` list each
+   matchup, its kickoff time, and the post-event cutoff time. For example,
+   `NHL_2025.txt` tells the ingestion program which NHL playoff series to find
+   and when prices should be sampled.
+2. **Find the corresponding Polymarket markets.** The ingestion program uses
+   the configured event tag and Gamma API to find each match or series market
+   and the related championship market. `data_ingestion/aliases.py` handles
+   differences between fixture names and Polymarket names.
+3. **Collect historical prices.** After identifying the correct market tokens,
+   the program requests their historical prices from the CLOB API at the
+   fixture's starting and ending times.
+4. **Create a standardized dataset.** The collected values are written to a
+   CSV in `data/match_data/`. Every team-side row contains the starting and
+   ending trigger price and championship-loss price required by the strategy.
+5. **Run the simulated hedge.** The strategy chooses qualifying rows, sizes the
+   trigger and championship-loss positions, and sends the simulated orders to
+   the backtesting engine.
+6. **Evaluate strategies and models.** The project compares probability
+   filters and regression models using P&L, return per hedge, drawdown, error
+   metrics, and cross-sport performance.
 
-## Requirements
+## Collecting and preparing the data
 
-- Python 3.10 or newer
-- Internet access only when regenerating data from Polymarket
-- No third-party Python packages are currently required
+Fixture schedules in [`data/raw/`](data/raw/) define the matchups and time
+windows to collect. Each file contains the teams, event date, and the cutoff
+used to sample the relevant Polymarket prices.
 
-Run all commands from the repository root. Creating a virtual environment is
-recommended:
+The shared ingestion package is under [`data_ingestion/`](data_ingestion/):
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+- [`aliases.py`](data_ingestion/aliases.py) centralizes team names, competition
+  names, and Polymarket naming differences.
+- [`polymarket.py`](data_ingestion/polymarket.py) contains the general event,
+  market, token, and price-history collection logic.
+- [`__main__.py`](data_ingestion/__main__.py) provides the command-line runner.
 
-## Quick start
+The Gamma API is used to find the configured sporting events and identify the
+correct markets and tokens. The CLOB API supplies historical token prices. The
+code then matches those markets to the fixture file using the centralized
+aliases rather than embedding separate discovery logic for every sport.
 
-Run the full test suite:
+For example, this command regenerates the FIFA World Cup match dataset using
+the existing `World Cup` ingestion configuration:
 
 ```powershell
-python -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m data_ingestion `
+  data/raw/World_Cup_2026.txt `
+  --event-tag "World Cup" `
+  --out data/match_data/polymarket_match_data.csv
 ```
 
-Run the dedicated middle-teams strategy on NBA 2025:
+The generated files are stored in [`data/match_data/`](data/match_data/). Each
+team-side row contains:
 
-```powershell
-python -m backtesting.middle_teams_strategy nba_2025 `
-  --stake 100 `
-  --initial-cash 1000 `
-  --fee-rate 0
-```
+- The team and matchup.
+- The trigger market's start and end prices.
+- The championship-loss market's start and end prices.
+- The trigger and exit timestamps.
 
-Run the configurable paired-hedge strategy:
+[`sport_strategy_config.py`](backtesting/sport_strategy_config.py) maps each
+dataset to the correct columns. This allows one ingestion workflow and one
+strategy implementation to support every configured sport.
 
-```powershell
-python -m backtesting.paired_hedge_strategy nba_2025 `
-  --trigger-min 0.30 `
-  --trigger-max 0.80 `
-  --championship-win-min 0.10 `
-  --championship-win-max 0.20 `
-  --stake 100 `
-  --initial-cash 1000 `
-  --fee-rate 0
-```
-
-## Strategies
-
-### Middle teams
-
-[middle_teams_strategy.py](backtesting/middle_teams_strategy.py) is a named,
-shared strategy with fixed selection rules:
-
-- The team's match, series, or advancement token starts between 30% and 80%.
-- Its implied championship-win price starts between 10% and 20%.
-- Both bounds are inclusive.
-
-The input CSV stores the complementary championship-loss token, so the implied
-championship-win price is calculated as:
-
-```text
-championship win = 1 - championship loss
-```
-
-For each qualifying team, the requested stake is divided between its trigger
-token and championship-loss token. The loss leg is sized to recover the stake
-if the team fails in the triggering event; the remaining budget purchases the
-trigger leg.
-
-### Configurable paired hedge
-
-[paired_hedge_strategy.py](backtesting/paired_hedge_strategy.py) contains the
-shared selection, sizing, and execution implementation. It supports a lower
-trigger threshold, an optional trigger maximum, an implied championship-win
-range, stake size, starting cash, and proportional fees.
-
-The older `--threshold` option remains an alias for `--trigger-min`, so existing
-commands and the threshold sweep remain compatible.
-
-### Threshold comparison
-
-[threshold_comparison.py](backtesting/threshold_comparison.py) runs the paired
-hedge at every whole-percent lower trigger threshold from 0% through 100%:
-
-```powershell
-python -m backtesting.threshold_comparison nba_2025 `
-  --stake 100 `
-  --fee-rate 0 `
-  --out data/analysis/nba_2025_threshold_comparison.csv
-```
-
-It reports qualifying hedges, trades, total P&L, P&L per hedge, return on
-deployed stake, and maximum drawdown. The PowerShell utility
-[combine_threshold_results.ps1](analysis/combine_threshold_results.ps1)
-combines the ten individual sweeps into long-form and pooled analysis files.
-
-## Current datasets
-
-The shared strategy configuration accepts these keys:
+The current dataset contains 10 sport-season configurations, 149 matchups, and
+298 team-side observations:
 
 ```text
 fifa
@@ -168,102 +106,302 @@ ucl_2026
 wimbledon_2026
 ```
 
-Together, the current CSVs contain:
+## How the dynamic hedge is backtested
 
-- 149 matchups
-- 298 team-side observations
-- FIFA World Cup, NBA, NHL, MLB, NFL, League of Legends Worlds, men's
-  Wimbledon, and men's UEFA Champions League data
+[`paired_hedge_strategy.py`](backtesting/paired_hedge_strategy.py) selects and
+sizes the two positions. [`engine.py`](backtesting/engine.py) handles cash,
+positions, orders, trades, fees, equity, realized P&L, and drawdown.
 
-Several datasets are availability-screened pilots rather than complete
-historical universes. See [backtesting/README.md](backtesting/README.md) for
-specific exclusions and fixture notes.
+Let:
 
-## Current results
+- `p` be the team's starting probability of winning the trigger event.
+- `l` be the starting price of the championship-loss token.
+- `c = 1 - l` be the implied starting championship-win probability.
+- `S` be the total stake assigned to one hedge.
 
-The following results use `$100` per qualifying hedge and a zero fee rate:
+With zero fees, the strategy purchases `S` shares of the championship-loss
+token. That costs `S × l`. The remaining budget, `S × c`, purchases the trigger
+token, giving a trigger quantity of:
 
-| Experiment | Hedges | Deployed stake | Total P&L | Gross stake return |
-|---|---:|---:|---:|---:|
-| Middle teams: 30%-80% trigger, 10%-20% title | 34 | $3,400 | +$50.81 | +1.49% |
-| Best pooled threshold by in-sample total P&L: 23% | 258 | $25,800 | +$124.80 | +0.48% |
-
-These are descriptive backtest results, not evidence of a tradeable edge. The
-23% threshold was selected from the same 101 thresholds being evaluated. The
-middle-teams result contains only 34 qualifying observations. Team rows from
-the same matchup, repeated teams, playoff rounds, and sport seasons are also
-correlated rather than independent samples.
-
-Generated analysis files include:
-
-- [Combined threshold sweep](data/analysis/combined_threshold_comparison.csv)
-- [All individual threshold sweeps](data/analysis/all_sports_threshold_comparison.csv)
-- [Best threshold by sport](data/analysis/threshold_comparison_summary.csv)
-
-## Data ingestion
-
-Fixture files under `data/raw/` define the events and timestamps to collect.
-Sport and naming differences live in
-[aliases.py](data_ingestion/aliases.py), while
-[polymarket.py](data_ingestion/polymarket.py) contains the shared ingestion
-logic.
-
-Example:
-
-```powershell
-python -m data_ingestion data/raw/NBA_2025.txt `
-  --event-tag "NBA Playoffs" `
-  --out data/match_data/nba_2025_match_data.csv
+```text
+trigger quantity = S × c / p
 ```
 
-The workflow for adding data is:
+The two opening positions therefore cost exactly `S`. If the team loses the
+triggering event and the championship-loss token resolves to \$1, that leg
+returns the original stake. If the team wins, the engine closes both legs at
+their recorded post-event prices and measures whether the championship market
+repriced by more or less than the trigger market implied.
 
-1. Add or update a fixture schedule in `data/raw/`.
-2. Add genuinely necessary naming aliases or market metadata in
-   `data_ingestion/aliases.py`.
-3. Run the shared ingestion package with the appropriate Polymarket event tag.
-4. Add one entry to `backtesting/sport_strategy_config.py` if the dataset is a
-   new backtesting configuration.
-5. Run an existing shared strategy; no sport-specific strategy copy is needed.
+For every selected hedge, the engine:
+
+1. Loads the two start prices at the event time.
+2. Validates available cash and position inventory.
+3. Executes both opening orders and records their fees and cost basis.
+4. Updates both instruments to their recorded end prices.
+5. Sells both positions and records the resulting P&L.
+6. Updates portfolio equity, drawdown, and aggregate statistics.
+
+The backtest supports a proportional `--fee-rate`, but the headline results
+below use a \$100 stake per hedge and a zero fee rate.
+
+## Research progression
+
+### 1. Middle-teams probability filter
+
+The first practical idea was that bettors might overreact to a dominant-looking
+result without considering how likely that result already was. Oklahoma City's
+series against Phoenix is a useful example. The Thunder began with a 97.45%
+probability of winning the series, so advancing was already almost fully
+expected. After Oklahoma City won, however, its implied championship
+probability still increased from 47.5% to 51.5%.
+
+The trigger price implied a post-series championship probability of only about
+48.7% (`47.5% / 97.45%`). The market instead moved to 51.5%, meaning the
+championship price increased more than this simple conditional relationship
+predicted. That is unfavorable for the championship-loss side of the hedge and
+illustrates why overwhelming favorites can be poor candidates. Very weak teams
+can create the opposite problem through enormous surprise-driven adjustments,
+thin championship markets, and unstable probability ratios. We therefore
+focused on teams in the middle of both probability ranges.
+
+[`middle_teams_strategy.py`](backtesting/middle_teams_strategy.py) therefore
+uses a fixed probability window:
+
+- Trigger-event win probability between 30% and 80%.
+- Championship-win probability between 10% and 20%.
+
+Across the available datasets, this filter selected 34 team-side hedges. At
+\$100 per hedge and zero fees, it produced **\$50.81 P&L**, or a **1.49% gross
+return on deployed stake**. This was the strongest simple strategy result, but
+34 observations are far too few to establish that the edge will persist.
+
+The broader threshold sweep also tested every whole-percent lower trigger
+threshold from 0% through 100%. The best pooled in-sample threshold was 23%,
+which selected 258 hedges and produced **\$124.80 P&L on \$25,800 deployed
+stake**, a **0.48% gross return**. Because the same data was used to choose and
+evaluate that threshold, this is an optimized in-sample result.
+
+### 2. FIFA-only regression models
+
+The next step was to determine whether we could train a model using our
+original FIFA dataset and then generalize that model to other sports. The FIFA
+experiment used 64 team-side rows from 32 matches and compared six feature
+equations against four prediction targets, for 24 ridge-regression models in
+total.
+
+The tested features were combinations of:
+
+- `p`: starting trigger-event win probability.
+- `c`: starting championship-win probability.
+- `c/p` or `p/c`: the relationship between the two markets.
+- `log(p/c)`: a less skewed version of that relationship.
+- `p²`: a nonlinear term allowing middle probabilities to behave differently
+  from probabilities near 0% or 100%.
+
+The targets included engine P&L per \$100, two strategy-EV definitions, and
+`strategy_ev_relative`, which measures the championship repricing error
+relative to the movement predicted by the trigger market.
+
+The default FIFA equation was:
+
+```text
+prediction = beta_0 + beta_1 p + beta_2 c + beta_3(c/p)
+             + beta_4 log(p/c) + beta_5 p²
+```
+
+It achieved an in-sample FIFA R² of approximately **0.344**, but its combined
+external R² on the other sports was **-0.136**. It selected 212 of 234 external
+team-side hedges and produced **\$60.37 P&L**, or **\$0.285 per selected hedge**.
+Simply taking all 234 external hedges produced **\$69.25**, or **\$0.296 per
+hedge**. Every tested FIFA-trained model had negative external R², so FIFA by
+itself did not provide a reliable cross-sport prediction model.
+
+Possible explanations include the small FIFA sample, dependence between the
+two team rows from each matchup, sport-specific market behavior, and FIFA being
+an unusual tournament rather than a representative training universe.
+
+The FIFA model files and results are under
+[`backtesting/experiments/fifa_model/`](backtesting/experiments/fifa_model/).
+
+### 3. Multi-sport regression model
+
+The final experiment increased the diversity of the training data. It trained
+on:
+
+- UCL 2026.
+- Men's Wimbledon 2026.
+- NHL 2026.
+- NHL 2025.
+
+This produced 124 training rows from 62 matchups. The fixed model uses `p` and
+`p²` to predict `strategy_ev_relative`:
+
+```text
+prediction = beta_0 + beta_1 p + beta_2 p²
+```
+
+It was then evaluated, without refitting, on FIFA, LoL Worlds 2025, MLB, NBA
+2026, NBA 2025, and NFL. The evaluation set contained 174 team-side rows from
+87 matchups.
+
+The model selected 89 of those 174 rows and produced **\$57.28 P&L on \$8,900
+deployed stake**, or **\$0.644 per selected hedge** and a **0.64% gross return**.
+Taking all 174 evaluation rows produced **\$25.83 P&L**, or **\$0.148 per hedge**.
+
+This economic selection result was better than the all-hedge baseline, but the
+model's external R² was **-2.159**. In other words, the selected subset made
+more money in this sample even though the model was poor at predicting the
+exact target values. The relative-EV target is also sensitive to observations
+whose predicted championship movement is close to zero. The result is
+promising enough to investigate, but it is not yet statistically robust.
+
+The fixed runner and output are under
+[`backtesting/experiments/multi_sport_model/`](backtesting/experiments/multi_sport_model/).
+
+## Results summary
+
+All values below assume \$100 per selected hedge and zero fees.
+
+| Experiment | Selected rows | Deployed stake | Total P&L | P&L per hedge | Gross return |
+|---|---:|---:|---:|---:|---:|
+| Middle teams: 30%-80% trigger, 10%-20% title | 34 | \$3,400 | +\$50.81 | +\$1.49 | +1.49% |
+| Best pooled threshold: 23% | 258 | \$25,800 | +\$124.80 | +\$0.48 | +0.48% |
+| FIFA default model on other sports | 212 | \$21,200 | +\$60.37 | +\$0.285 | +0.28% |
+| FIFA external all-hedge baseline | 234 | \$23,400 | +\$69.25 | +\$0.296 | +0.30% |
+| Multi-sport `p + p²` model | 89 | \$8,900 | +\$57.28 | +\$0.644 | +0.64% |
+| Multi-sport evaluation all-hedge baseline | 174 | \$17,400 | +\$25.83 | +\$0.148 | +0.15% |
+
+These results should not be compared as independent trials. The experiments
+reuse markets, team rows within a matchup are dependent, and several rules were
+chosen after observing the available data.
+
+## Conclusions
+
+The current evidence supports four conclusions:
+
+1. The mismatch between trigger-event and championship probabilities is a
+   measurable research signal and can be expressed as a defined paired hedge.
+2. A simple middle-probability filter performed better than trading every
+   available team, but its sample contains only 34 observations.
+3. Models trained only on FIFA did not generalize successfully to the other
+   sports. Their external R² values were negative, and the default model did
+   not outperform the all-hedge average P&L.
+4. Training the `p + p²` model on UCL, Wimbledon, and two NHL seasons produced
+   a better held-out economic selection result, but the negative external R²,
+   limited data, and target instability prevent a strong profitability claim.
+
+The project therefore demonstrates a complete research workflow and a
+promising hypothesis, not a proven production strategy. The most important
+next step is collecting a larger chronological dataset and reserving a final
+period that is never used for strategy or model selection.
+
+## Limitations
+
+- Historical order-book depth is not reconstructed, so the backtest cannot
+  determine how much size was available at the sampled price.
+- Bid/ask spreads, slippage, partial fills, rejected orders, and fill
+  probability are not modeled. A real order might not fill or might require
+  paying through the spread.
+- The reported results use zero fees. Real fees and execution costs could
+  eliminate an edge measured in fractions of a percent.
+- The stored price point may be stale relative to the intended entry or exit
+  time, particularly in thin championship markets.
+- Some championship-market exits use the latest CLOB observation at or before
+  the configured cutoff rather than a guaranteed immediately executable quote.
+
+Before live or paper trading, the strategy needs historical spreads and depth,
+timestamped executable quotes, realistic order simulation, position-size and
+risk limits, a chronological bankroll, and a genuinely untouched test set.
+
+## Running the project
+
+Python 3.10 or newer is required. No third-party Python packages are currently
+needed.
+
+Create and activate a virtual environment:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Run the middle-teams strategy:
+
+```powershell
+python -m backtesting.middle_teams_strategy nba_2025 `
+  --stake 100 `
+  --initial-cash 1000 `
+  --fee-rate 0
+```
+
+Run the configurable paired hedge:
+
+```powershell
+python -m backtesting.paired_hedge_strategy nba_2025 `
+  --trigger-min 0.30 `
+  --trigger-max 0.80 `
+  --championship-win-min 0.10 `
+  --championship-win-max 0.20 `
+  --stake 100 `
+  --initial-cash 1000 `
+  --fee-rate 0
+```
+
+Train one FIFA model and export row-level predictions:
+
+```powershell
+python -m backtesting.experiments.fifa_model.train_hedge_model `
+  --feature-set p_c_c_over_p_log_p_over_c_p2 `
+  --target strategy_ev_relative `
+  --out backtesting/experiments/fifa_model/fifa_ridge_model_predictions.csv
+```
+
+Compare all FIFA-trained feature and target combinations:
+
+```powershell
+python -m backtesting.experiments.fifa_model.compare_hedge_models
+```
+
+Run the fixed UCL/Wimbledon/NHL model:
+
+```powershell
+python -m backtesting.experiments.multi_sport_model.train_multi_sport_model
+```
+
+Run a threshold sweep:
+
+```powershell
+python -m backtesting.threshold_comparison nba_2025 `
+  --stake 100 `
+  --fee-rate 0 `
+  --out data/analysis/nba_2025_threshold_comparison.csv
+```
+
+## Repository layout
+
+```text
+README.md                          Project documentation
+data/raw/                          Fixture schedules
+data/match_data/                   Generated historical market CSVs
+data/analysis/                     Threshold and exploratory outputs
+data_ingestion/                    Shared Polymarket ingestion and aliases
+backtesting/engine.py              Event-driven portfolio and execution engine
+backtesting/paired_hedge_strategy.py  Shared hedge selection and sizing
+backtesting/middle_teams_strategy.py  Fixed middle-probability strategy
+backtesting/experiments/fifa_model/   FIFA training and comparisons
+backtesting/experiments/multi_sport_model/  UCL/Wimbledon/NHL model
+analysis/                           Analysis utilities
+tests/                              Automated test suite
+```
 
 ## Testing
 
-The 71 automated tests cover:
-
-- Engine cash, inventory, fee, trade, liquidation, and P&L accounting
-- CSV parsing and complementary-token accounting
-- Alias construction and file-driven ingestion
-- Polymarket event and token resolution behavior
-- Shared sport configuration
-- Paired-hedge selection and sizing
-- Middle-teams range boundaries and CLI behavior
-- Threshold sweep calculations and CSV output
-
-Run them with:
+The repository contains 79 tests covering engine accounting, CSV parsing,
+ingestion and aliases, market resolution, sport configuration, strategy
+selection and sizing, threshold sweeps, feature construction, model fitting,
+and comparison outputs.
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
-
-## Important limitations
-
-- Historical bid/ask spreads and order-book depth are not reconstructed.
-- Slippage, partial fills, fill probability, and market capacity are not
-  modeled.
-- `fee_rate` is a generic proportional fee, not a reconstruction of every
-  market's historical fee schedule.
-- The stored price history does not preserve the exact source timestamp or
-  quote age for every sampled point.
-- Championship-loss exits use the latest available CLOB history point at or
-  before the configured post-result cutoff and may be stale.
-- Result-token end values use official binary resolution, while a real trader
-  may have faced settlement delays or different exit liquidity.
-- Dataset availability screening can introduce selection bias.
-- Threshold selection and the reported results are in-sample; there is no
-  locked walk-forward or untouched holdout test yet.
-- The pooled report adds independently run sport results. It is not a single
-  shared-bankroll portfolio and does not report a valid combined drawdown.
-
-Before treating the strategy as executable, the project needs timestamped
-quotes, historical spread/depth or trade-size evidence, a realistic execution
-model, one chronological bankroll, and out-of-sample validation.
